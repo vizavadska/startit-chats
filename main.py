@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask('app')
@@ -6,8 +6,7 @@ app = Flask('app')
 
 @app.route('/')
 def index_page():
-  return "Sveiciens no StartIT! (33333)"
-
+  return render_template('index.html')
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
