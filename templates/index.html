@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> StartIT Chat </title>
         <link href="{{url_for('static',filename='favicon.ico')}}" rel="icon" type="image/x-icon"/>
-        <script src="static/chats.js" type="text/javascript"></script>
+        <title> Sannie's StartIT Chat </title>
     </head>
-    <body onload = "lasiChatu();" class="body" >
+    <body onload='lasiChatu();' class='body'>
         {% block saturs %}
         {% endblock %}
-        <h4> Sveiki no template! OK tas palika</h4>
+        <script src="{{url_for('static',filename='chats.js')}}" type="text/javascript"></script>
     </body>
 </html>
