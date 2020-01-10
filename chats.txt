@@ -13,3 +13,5 @@ ccc
 vakars
 piektdiena
 mmm
+cc
+ccxx
