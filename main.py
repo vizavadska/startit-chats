@@ -1,4 +1,4 @@
-from flask import Flask, render_template, json, jsonify
+from flask import Flask, render_template, json, jsonify, request
 
 
 app = Flask('app')
@@ -25,7 +25,7 @@ def suuti_zinju():
   dati = request.json
   with open('chats.txt', 'a', newline='') as f:
     f.write(dati['chats'] + '\n')
-    return ielasit_chatu()
+  return ielasit_chatu()
 
 
 
